@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+
+    /* Colors: */
+    --field-border-color: #0000001F;
+    --field-text-color: #000000BC;
+    --field-error-border-color: #B00020;
+    --window-background: #EFEFEF;
+    --container-background: #FFFFFF;
+    --login-button-color: #C3001E;
+    --unnamed-color-00000099: #00000099;
+    
+    /* Font/text values */
+    --unnamed-font-family-roboto: Roboto;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-character-spacing-1-25: 1.25px;
+    --unnamed-character-spacing-0-4: 0.4px;
+    --unnamed-character-spacing-0-15: 0.15px;
+    --unnamed-line-spacing-16: 16px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-text-transform-uppercase: uppercase;
+    }
+    
+    /* Character Styles */
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-roboto);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-16);
+    letter-spacing: var(--unnamed-character-spacing-1-25);
+    color: var(--container-background);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-roboto);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-16);
+    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--field-error-border-color);
+    }
+    .unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-roboto);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0-15);
+    color: var(--unnamed-color-00000099);
+    }
