@@ -1,35 +1,36 @@
 <div class="login-page">
-    <mat-card>
-        <mat-card-content>
-            <div class="header">
-                <img src="https://avatars.githubusercontent.com/u/124091983" alt="">
+    <div class="sec-one">
+      <div class="sec-tow">
+        <div class="header">
+          <img src="https://avatars.githubusercontent.com/u/124091983" alt="">
+        </div>
+        <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+          <div class="emailInput">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput placeholder="Enter email address" required />
+              <mat-error *ngIf="!loginForm.controls['email'].valid">
+                Email is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+  
+          <div>
+  
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" matInput type="password" required />
+              <mat-error *ngIf="!loginForm.controls['password'].valid">
+                Password is required
+              </mat-error>
+            </mat-form-field>
+            <div class="login-button-container">
+              <button class="login-button" [disabled]="!loginForm.valid">Login</button>
             </div>
-            <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
-                <div class="emailInput">
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Email</mat-label>
-                        <input formControlName="email" matInput placeholder="Enter email address" required />
-                        <mat-error *ngIf="!loginForm.controls['email'].valid">
-                            Email is required
-                        </mat-error>
-                    </mat-form-field>
-                </div>
-
-                <div>
-
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Password</mat-label>
-                        <input formControlName="password" matInput type="password" required />
-                        <mat-error *ngIf="!loginForm.controls['password'].valid">
-                            Password is required
-                        </mat-error>
-                    </mat-form-field>
-                    <div class="login-button-container">
-                        <button class="login-button" [disabled]="!loginForm.valid">Login</button>
-                    </div>
-                </div>
-
-            </form>
-        </mat-card-content>
-    </mat-card>
-</div>
+          </div>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+  
